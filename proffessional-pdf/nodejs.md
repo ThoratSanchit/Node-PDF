@@ -1,3 +1,15 @@
+# Index
+
+- [Chapter 1: Introduction to Node.js](#chapter-1-introduction-to-nodejs)
+- [Chapter 2: Node.js Core Modules](#chapter-2-nodejs-core-modules)
+- [Chapter 3: Asynchronous Programming in Node.js (Detailed)](#chapter-3-asynchronous-programming-in-nodejs-detailed)
+- [Chapter 4: Getting Started with Express.js](#chapter-4-getting-started-with-expressjs)
+- [Chapter 5: REST API Development with Express.js](#chapter-5-rest-api-development-with-expressjs)
+- [Chapter 6: MongoDB with Mongoose](#chapter-6-mongodb-with-mongoose)
+- [Chapter 8: Advanced Concepts & Best Practices](#chapter-8-advanced-concepts--best-practices)
+
+---
+
 # Chapter 1: Introduction to Node.js
 
 ## Table of Contents
@@ -1379,7 +1391,7 @@ async function fetchData() {
 ###  Best Practices
 - Always use try/catch for error handling
 - Avoid blocking code (like heavy loops) inside async functions
-- Use `await` only when necessary (don’t block parallel tasks)
+- Use `await` only when necessary (don't block parallel tasks)
 - Keep async functions small and modular
 
 ---
@@ -1477,7 +1489,7 @@ app.use((err, req, res, next) => {
 - **try/catch:** Wearing a helmet
 
 ### Next Steps
-In the next chapter, we’ll explore more advanced Node.js features and how to build robust applications!
+In the next chapter, we'll explore more advanced Node.js features and how to build robust applications!
 
 ---
 
@@ -1786,7 +1798,7 @@ app.use(helmet());
 ## Serving Static Files
 
 **Definition:**
-Static files are things like HTML, CSS, images, and JavaScript files that don’t change.
+Static files are things like HTML, CSS, images, and JavaScript files that don't change.
 
 **Real-World Example:**
 Like a brochure rack in a lobby—anyone can take a brochure (file) without asking.
@@ -1849,7 +1861,7 @@ app.get('/user/:id', (req, res) => {
 ## Organizing Your Express App
 
 **Definition:**
-As your app grows, it’s best to split your code into different files and folders.
+As your app grows, it's best to split your code into different files and folders.
 
 **Real-World Example:**
 Like organizing a big kitchen with separate drawers for spoons, forks, and knives.
@@ -2217,7 +2229,7 @@ Imagine a filing cabinet. In SQL, every file (row) must have the same fields (co
 - **Scalability:** MongoDB is designed for horizontal scaling (easy to add more servers).
 
 **Fun Fact:**
-MongoDB’s name comes from “humongous,” reflecting its ability to handle huge amounts of data.
+MongoDB's name comes from "humongous," reflecting its ability to handle huge amounts of data.
 
 ---
 
@@ -2238,7 +2250,7 @@ You can run MongoDB on your own computer (locally) or use a cloud service like M
 4. Get your connection string to use in your apps
 
 **Real-World Example:**
-Running MongoDB locally is like having a mini-fridge at home. Using Atlas is like renting a fridge in a shared kitchen that’s always online and managed for you.
+Running MongoDB locally is like having a mini-fridge at home. Using Atlas is like renting a fridge in a shared kitchen that's always online and managed for you.
 
 ---
 
@@ -2392,7 +2404,7 @@ const postSchema = new mongoose.Schema({
 Mongoose can automatically replace the referenced ObjectId with the actual document using the `populate` method.
 
 **Real-World Example:**
-A blog post (Post) references its author (User). Population is like looking up the author’s full profile when viewing the post.
+A blog post (Post) references its author (User). Population is like looking up the author's full profile when viewing the post.
 
 ---
 
@@ -2451,7 +2463,7 @@ MongoDB automatically creates an index on the `_id` field of every document.
 ## API Security Basics (Helmet, CORS, rate-limiting)
 
 **Definition:**
-API security involves protecting your application’s endpoints from unauthorized access, attacks, and misuse.
+API security involves protecting your application's endpoints from unauthorized access, attacks, and misuse.
 
 **Helmet:**
 Helmet is a middleware for Express that sets various HTTP headers to help secure your app.
@@ -2485,7 +2497,7 @@ Helmet can help prevent over 10 common web vulnerabilities with just one line of
 ## Authentication (JWT-based auth step-by-step)
 
 **Definition:**
-Authentication is the process of verifying a user’s identity. JWT (JSON Web Token) is a compact, URL-safe way to represent claims between two parties.
+Authentication is the process of verifying a user's identity. JWT (JSON Web Token) is a compact, URL-safe way to represent claims between two parties.
 
 **Step-by-Step JWT Auth:**
 1. User logs in with username and password.
@@ -2520,10 +2532,10 @@ const isMatch = await bcrypt.compare('myPassword', hashed);
 ```
 
 **Real-World Example:**
-Hashing is like shredding a document—once shredded, you can’t put it back together, but you can compare shreds to see if they came from the same document.
+Hashing is like shredding a document—once shredded, you can't put it back together, but you can compare shreds to see if they came from the same document.
 
 **Fun Fact:**
-bcrypt automatically adds a random “salt” to each password, making it even more secure.
+bcrypt automatically adds a random "salt" to each password, making it even more secure.
 
 ---
 
@@ -2593,7 +2605,7 @@ const filtered = await User.find({ age: { $gte: 18 } });
 ```
 
 **Real-World Example:**
-Pagination is like a book’s table of contents—showing a few chapters at a time. Filtering is like searching for all chapters about a specific topic.
+Pagination is like a book's table of contents—showing a few chapters at a time. Filtering is like searching for all chapters about a specific topic.
 
 ---
 
@@ -2612,11 +2624,11 @@ app.use((err, req, res, next) => {
 
 **Best Practices:**
 - Use centralized error handling middleware
-- Don’t leak sensitive info in error messages
+- Don't leak sensitive info in error messages
 - Log errors for debugging
 
 **Real-World Example:**
-Error handling is like a car’s airbag—it protects users when something goes wrong.
+Error handling is like a car's airbag—it protects users when something goes wrong.
 
 ---
 
