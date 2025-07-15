@@ -267,4 +267,3 @@ Custom commands for running, building, or deploying your app.
 
 ---
 
-**Ready for the next chapter? Let’s master even more Node.js skills!** 

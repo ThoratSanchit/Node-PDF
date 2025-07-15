@@ -241,4 +241,4 @@ MongoDB automatically creates an index on the `_id` field of every document.
 
 ---
 
-**Ready for the next chapter? Real-life Project Building (Hands-On)!** 
+**Ready for the next chapter 7? Real-life Project Building (Hands-On)!** 
